@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link href="https://cdn.bootcss.com/bootstrap/2.3.1/css/bootstrap.min.css" rel="stylesheet">
+		<style type="text/css">
+			*{margin:0;padding:0;}
+		</style>
+		<title></title>
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script src="colResizable-1.6.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<div style="padding:30px;">
+		<h3>
+			jQuery可调整表格列宽插件 colResizable
+		</h3>
+		<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th>
+								<div>栏目类型</div>
+						</th>
+						<th>活动名称</th>
+						<th>状态</th>
+						<th>操作选项</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>青春日记</td>
+						<td>我们一起傻逼的日子</td>
+						<td>提交</td>
+						<td>审核</td>
+					</tr>
+					<tr>
+						<td>我和孩子的成长故事</td>
+						<td>成长故事</td>
+						<td>通过</td>
+						<td>审核</td>
+					</tr>
+				</tbody>
+		</table>
+		</div>		
+	</body>
+	<script type="text/javascript">
+	$(function() {
+		$("table").colResizable();
+	})
+</script>
+</html>
